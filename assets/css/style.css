@@ -79,6 +79,17 @@ main{
     color: white;
 }
 
+.offcanvas.show:not(.hiding), .offcanvas.showing {
+    width: 100%;
+    text-align: left;
+}
+
+.width-form{
+    width: 50%;
+    height: 50%;
+    align-self: self-end;
+}
+
 
 
 
@@ -96,5 +107,9 @@ main{
 
     .new-student{
         text-align: center;
+    }
+
+    .offcanvas.show:not(.hiding), .offcanvas.showing {
+        width: 40%;
     }
 }

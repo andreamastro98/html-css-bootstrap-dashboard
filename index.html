@@ -88,11 +88,60 @@
                 <span>Studenti online negli ultimi 30 minuti</span>
                 <h2>125</h2>
               </div>
-              <div class="col-12 col-md-4 col-lg-3 my-2 new-student">
+              <div class="col-12 col-md-4 col-lg-3 my-2 new-student order-first order-sm-last">
                 <span>Nuovo Studente</span>
                 <a href="#">
-                  <i class="fa-solid fa-plus icon-square-border mx-2"></i>
-                </a>                
+                  <i class="fa-solid fa-plus icon-square-border mx-2" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></i>
+                </a>
+                <!-- offcanvas -->
+                <div class="offcanvas offcanvas-end width-offcanvas" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                  <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <form class="row">
+                      <div class="d-inline-block col-6 my-1">
+                        <label for="name" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="name">
+                      </div>
+                      <div class="d-inline-block col-6 my-1">
+                        <label for="surname" class="form-label">Cognome</label>
+                        <input type="text" class="form-control" id="surname">
+                      </div>
+                      <div class="input-group width-form my-1">                   
+                        <div class="input-group-text" id="basic-addon1">Email</div>
+                        <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+                      </div>
+                      <div class="d-inline-block col-6 my-1">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="text" class="form-control" id="password">
+                      </div>
+                      <div class="input-group width-form my-1">                   
+                        <div class="input-group-text" id="basic-addon1">Email</div>
+                        <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+                      </div>
+                      <div class="d-inline-block col-6 my-1">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="text" class="form-control" id="password">
+                      </div>
+                      <div class="col-12 my-1">
+                        <label for="address" class="form-label">Indirizzo</label>
+                        <input type="text" class="form-control" id="address">
+                      </div>
+                      <div class="col-6 my-1">
+                        <label for="city" class="form-label">Cittá</label>
+                        <input type="text" class="form-control" id="city">
+                      </div>
+                      <select class="form-select col-4">
+                        <option selected>Scegli...</option>
+                        <option value="1">Italy</option>
+                        <option value="2">France</option>
+                        <option value="3">England</option>
+                      </select>               
+                    </form>
+                  </div>
+                </div>                
               </div>
             </div>
           </div>
