@@ -109,36 +109,48 @@
                         <label for="surname" class="form-label">Cognome</label>
                         <input type="text" class="form-control" id="surname">
                       </div>
-                      <div class="input-group width-form my-1">                   
-                        <div class="input-group-text" id="basic-addon1">Email</div>
-                        <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+                      <div class="col-md-6 my-1">
+                        <label for="inputEmail4" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="inputEmail4">
                       </div>
-                      <div class="d-inline-block col-6 my-1">
-                        <label for="password" class="form-label">Password</label>
-                        <input type="text" class="form-control" id="password">
-                      </div>
-                      <div class="input-group width-form my-1">                   
-                        <div class="input-group-text" id="basic-addon1">Email</div>
-                        <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
-                      </div>
-                      <div class="d-inline-block col-6 my-1">
-                        <label for="password" class="form-label">Password</label>
-                        <input type="text" class="form-control" id="password">
+                      <div class="col-md-6 my-1">
+                        <label for="inputPassword4" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="inputPassword4">
                       </div>
                       <div class="col-12 my-1">
-                        <label for="address" class="form-label">Indirizzo</label>
-                        <input type="text" class="form-control" id="address">
+                        <label for="inputAddress" class="form-label">Indirizzo</label>
+                        <input type="text" class="form-control" id="inputAddress">
                       </div>
-                      <div class="col-6 my-1">
-                        <label for="city" class="form-label">Cittá</label>
-                        <input type="text" class="form-control" id="city">
+                      <div class="col-md-6 my-1">
+                        <label for="inputCity" class="form-label">Cittá</label>
+                        <input type="text" class="form-control" id="inputCity">
                       </div>
-                      <select class="form-select col-4">
-                        <option selected>Scegli...</option>
-                        <option value="1">Italy</option>
-                        <option value="2">France</option>
-                        <option value="3">England</option>
-                      </select>               
+                      <div class="col-md-4 my-1">
+                        <label for="inputState" class="form-label">Stato</label>
+                        <select id="inputState" class="form-select">
+                          <option selected>Scegli...</option>
+                          <option>...</option>
+                        </select>
+                      </div>
+                      <div class="col-md-2 my-1">
+                        <label for="inputZip" class="form-label">Cap</label>
+                        <input type="text" class="form-control" id="inputZip">
+                      </div>
+                      <div class="input-group mb-3 my-3">
+                        <input type="file" class="form-control" id="inputGroupFile02">
+                      </div>
+                      <div class="col-12 my-1">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="gridCheck">
+                          <label class="form-check-label" for="gridCheck">
+                            Seleziona per proseguire
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-12 my-2">
+                        <button type="submit" class="btn btn-primary">Salva</button>
+                        <button type="button" class="btn btn-warning">Svuota</button>
+                      </div>                      
                     </form>
                   </div>
                 </div>                
