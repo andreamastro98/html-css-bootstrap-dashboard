@@ -53,10 +53,17 @@ main{
 
 .row-sidebar a{
     color: white;
+    text-decoration: none;
+    padding: 4px;
+}
+
+.row-sidebar:hover{
+    background-color: lightslategray;
 }
 
 .boolean-body{
     width: 100%;
+    overflow: auto;
 }
 
 .boolean-bar{
@@ -66,17 +73,6 @@ main{
 
 .bg-pills{
     background-color: #165bba;
-}
-
-.icon-square-border{
-    border: 1px solid;
-    border-radius: 6px;
-    display: inline-block;
-    text-align: center;
-    line-height: 35px;
-    height: 35px;
-    aspect-ratio: 1;
-    color: white;
 }
 
 .offcanvas.show:not(.hiding), .offcanvas.showing {
@@ -90,9 +86,20 @@ main{
     align-self: self-end;
 }
 
+.table-cell-width{
+    width: 50%;
+}
 
-
-
+.icon-rounded-red{
+    background-color: red;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    line-height: 25px;
+    height: 25px;
+    aspect-ratio: 1;
+    color: white;
+}
 
 /*********** MEDIA QUERY **********/
 
@@ -111,5 +118,9 @@ main{
 
     .offcanvas.show:not(.hiding), .offcanvas.showing {
         width: 40%;
+    }
+
+    .table-cell-width{
+        width: 60%;
     }
 }
