@@ -28,8 +28,21 @@ nav .nav-3-box a{
     color: #5b5858;
 }
 
-nav .nav-3-box :nth-child(4){
+.btn-group>.btn {
+    position: relative;
+    flex: 1 1 auto;
+    background-color: snow;
+    border: 0;
+    color: black;
+}
+
+.btn-group>.btn a{
     color: #ff8f00;
+}
+
+.dropdown-menu li a{
+    text-decoration: none;
+    color: black;
 }
 
 main{
@@ -62,8 +75,9 @@ main{
 }
 
 .boolean-body{
-    width: 100%;
-    overflow: auto;
+    width: calc(100% - 56px);
+    overflow-y: auto;
+    overflow-x: hidden
 }
 
 .boolean-bar{
@@ -122,5 +136,9 @@ main{
 
     .table-cell-width{
         width: 60%;
+    }
+
+    .boolean-body{
+        width: calc(100% - 140px);
     }
 }
